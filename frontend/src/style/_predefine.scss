@@ -1,0 +1,158 @@
+.flex {
+  display: flex;
+}
+.center {
+  justify-content: center;
+  align-items: center;
+}
+.between {
+  justify-content: space-between;
+  align-items: center;
+}
+.mt-5 {
+  margin-top: 5px;
+}
+.mb-20 {
+  margin-bottom: 20px;
+}
+.mb-30 {
+  margin-bottom: 30px;
+}
+.mb-10 {
+  margin-bottom: 10px;
+}
+.mt-10 {
+  margin-top: 10px;
+}
+.mt-20 {
+  margin-top: 20px;
+}
+.mt-30 {
+  margin-top: 30px;
+}
+.mt-50 {
+  margin-top: 100px;
+}
+.margin-20 {
+  margin: 20px;
+}
+.margin-30 {
+  margin: 30px;
+  margin-top: 10px;
+}
+.ms-20 {
+  margin: 0 20px;
+}
+
+.soft {
+  font-family: sansation;
+}
+.soft-r {
+  font-family: sansation-r;
+}
+.black {
+  font-family: rubik;
+}
+.pt-5 {
+  padding-top: 5px;
+}
+.pt-10 {
+  padding-top: 10px;
+}
+.mt-30 {
+  margin-top: 30px;
+}
+.p-5 {
+  padding: 5px;
+}
+.p-10 {
+  padding: 10px;
+}
+.p-15 {
+  padding: 15px;
+}
+.p-20 {
+  padding: 20px;
+}
+.pl-5 {
+  padding-left: 5px;
+}
+.pl-10 {
+  padding-left: 10px;
+}
+.pl-20 {
+  padding-left: 20px;
+}
+.pr-30 {
+  padding-right: 45px;
+}
+
+//gaps for flex
+.gap-5 {
+  gap: 5px;
+}
+.gap-10 {
+  gap: 10px;
+}
+
+//text-align
+
+.textAlign-c {
+  text-align: center;
+}
+.textAlign-s {
+  text-align: start;
+}
+
+//transition
+
+.slide--left {
+  animation-name: slideLeft;
+  animation-duration: 0.3s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes slideLeft {
+  from {
+    transform: translateX(100%);
+  }
+}
+
+.slide--right {
+  animation-name: slideRight;
+  animation-duration: 0.3s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes slideRight {
+  from {
+    transform: translateX(-100%);
+  }
+}
+
+//color
+
+.main--color {
+  color: #4f6f52;
+}
+
+//fontSize
+
+.fs-15 {
+  font-size: 20px;
+}
+//styled button
+
+.styled--button {
+  margin: 0 auto;
+  margin-top: 10px;
+  padding: 10px 30px;
+  background-color: #4f6f52;
+  border: none;
+  color: white;
+  border-radius: 10px;
+  letter-spacing: 2px;
+  font-family: rubik;
+}

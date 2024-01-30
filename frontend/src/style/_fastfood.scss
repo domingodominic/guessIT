@@ -1,0 +1,25 @@
+.categories--container {
+  list-style: none;
+}
+
+.image--container {
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.196);
+  padding: 10px 0;
+  margin: 0 20px;
+  margin-top: 20px;
+}
+
+.answer--input {
+  border: 1.5px solid #4f6f52;
+  padding: 15px 20px;
+  font-family: rubik;
+  text-align: center;
+  color: #4f6f52;
+  border-radius: 10px;
+  width: 80%;
+  &:focus {
+    border: transparent;
+    outline-color: #4f6f52;
+  }
+}

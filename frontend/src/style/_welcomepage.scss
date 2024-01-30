@@ -1,0 +1,50 @@
+.welcomepage--container {
+  height: 100svh;
+  position: relative;
+  overflow: hidden;
+  padding: 20px;
+  transform: translateY(100%);
+  animation-name: floatDOWN;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+}
+
+.design--one {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  background-image: url("../images/Vector\ 3.png");
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+.design--two--container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  img {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+}
+.css-1a4cg4j-MuiButtonBase-root-MuiTab-root.Mui-selected {
+  color: #4f6f52;
+}
+.css-1a4cg4j-MuiButtonBase-root-MuiTab-root.Mui-selected {
+  color: #4f6f52 !important;
+}
+.css-11yukd5-MuiTabs-indicator {
+  background-color: #4f6f52 !important;
+}
+
+@keyframes floatDOWN {
+  to {
+    transform: translateY(0%);
+  }
+}
