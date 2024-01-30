@@ -16,7 +16,9 @@ function Welcomepage() {
 
       <div className="mt-30 p-10 pr-30">
         <p className="soft">Hi player, choose</p>
-        <h1 className="black mt-5">CATEGORY AND LET'S START THE GAME !</h1>
+        <h1 className="black mt-5 main--color">
+          CATEGORY AND LET'S START THE GAME !
+        </h1>
       </div>
       <Tabselection selectedTab={selectedTab} setSelectedTab={setSelectedTab} />
 

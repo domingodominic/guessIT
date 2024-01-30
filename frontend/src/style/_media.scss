@@ -1,0 +1,16 @@
+// .categories--container {
+//   img {
+//   }
+// }
+
+@media (max-height: 668px) {
+  .categories--container {
+    .category--image {
+      width: 300px;
+      height: 140px;
+    }
+    .leaderboard--image {
+      width: 300px;
+    }
+  }
+}

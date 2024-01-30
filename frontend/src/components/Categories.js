@@ -56,18 +56,14 @@ function Categories() {
           >
             <div className="textAlign-c">
               <div style={{ width: "100%" }}>
-                <Box
-                  component="img"
-                  sx={{
-                    height: 200,
-                    width: "100%",
-                    boxShadow: "0 0 10px rgba(0, 0, 0, 0.5)",
-                    borderRadius: 3,
-                    maxHeight: { xs: 233, md: 167 },
-                    maxWidth: { xs: 350, md: 250 },
-                  }}
-                  alt="The house from the offer."
+                <img
+                  className="category--image"
                   src={url}
+                  alt="game image"
+                  style={{
+                    boxShadow: "0 0 10px rgba(0, 0, 0, 0.5)",
+                    borderRadius: "3px",
+                  }}
                 />
 
                 <p className="textAlign-s pl-20 soft-r">{`Guess the ${itemName}`}</p>
