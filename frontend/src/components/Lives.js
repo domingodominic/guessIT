@@ -5,8 +5,6 @@ import Rating from "@mui/material/Rating";
 import { MdOutlineFavorite } from "react-icons/md";
 import { MdOutlineFavoriteBorder } from "react-icons/md";
 
-import Typography from "@mui/material/Typography";
-
 const StyledRating = styled(Rating)({
   "& .MuiRating-iconFilled": {
     color: "#4f6f52",
