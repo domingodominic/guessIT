@@ -158,7 +158,11 @@ function Fastfood() {
           </div>
           <div className="design--one"></div>
           <div className="flex between margin-20 ">
-            <IoArrowUndoSharp fontSize={40} color="4f6f52" />
+            <IoArrowUndoSharp
+              fontSize={40}
+              color="4f6f52"
+              onClick={() => navigate("/")}
+            />
             <div className="flex center gap-5">
               <HiMiniInformationCircle fontSize={37} color="#4f6f52" />
               <FaCircleQuestion fontSize={30} color="#4f6f52" />
