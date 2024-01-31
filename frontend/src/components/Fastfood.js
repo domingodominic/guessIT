@@ -58,7 +58,7 @@ function Fastfood() {
     };
 
     gameFinish();
-  }, [lives, data.length]);
+  }, [lives, gameDone]);
 
   useEffect(() => {
     const timer =
@@ -84,7 +84,7 @@ function Fastfood() {
   };
 
   const timesUP = () => {
-    if (currentQuestion.answer === answer) {
+    if (currentQuestion.answer === answer.toLowerCase()) {
       setPoints(points + 1);
     } else {
       setLives(lives - 1);
@@ -111,7 +111,7 @@ function Fastfood() {
     } else {
       setTime(0);
       setBuffer(10);
-      if (currentQuestion.answer === answer) {
+      if (currentQuestion.answer === answer.toLowerCase()) {
         setPoints(points + 1);
       } else {
         setLives(lives - 1);
