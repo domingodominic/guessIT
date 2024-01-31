@@ -11,7 +11,7 @@ const uri =
   "mongodb+srv://dominicpunladomingo120:root123@guessgame.up8e3xe.mongodb.net/?retryWrites=true&w=majority";
 
 const corsOptions = {
-  origin: ["http://localhost:3000", "https://glamourease.vercel.app/"],
+  origin: ["http://localhost:3000", "https://guess-it-nu.vercel.app/"],
   methods: "PUT, POST, DELETE, GET",
   allowedHeaders: "Content-Type",
 };
