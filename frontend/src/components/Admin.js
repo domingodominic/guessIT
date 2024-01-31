@@ -1,5 +1,6 @@
 import axios from "axios";
 import React, { useState } from "react";
+import { server } from "./server.js";
 
 function Admin() {
   const [formData, setFormdata] = useState(new FormData());
@@ -29,7 +30,7 @@ function Admin() {
       // Send the updated data to the backend
       console.log("image url ", imageURL, answer);
       await axios
-        .post(`http://localhost:5555/fastfood/uploadNew`, {
+        .post(`${server}/fastfood/uploadNew`, {
           image: imageURL,
           answers: answer,
         })
@@ -42,7 +43,7 @@ function Admin() {
   const fastfood = () => {
     try {
       axios
-        .post("http://localhost:5555/leaderboard/leader", {
+        .post(`${server}/leaderboard/leader`, {
           name: "Doms",
           score: 7,
           category: "fastfood",

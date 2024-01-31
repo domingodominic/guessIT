@@ -8,6 +8,7 @@ import Lives from "./Lives";
 import useLeaderStore from "../store/leaderBoardStore";
 import { useNavigate } from "react-router-dom";
 import { LinearProgress } from "@mui/material";
+import { server } from "./server";
 
 function Fastfood() {
   const [time, setTime] = useState(0);
@@ -68,7 +69,7 @@ function Fastfood() {
 
   const fetchData = async () => {
     try {
-      const res = await axios.get("http://localhost:5555/fastfood/getData");
+      const res = await axios.get(`${server}/fastfood/getData`);
       setData(res.data);
       setLoading(false);
       setCurrentQuestion(getRandomQuestion(res.data));

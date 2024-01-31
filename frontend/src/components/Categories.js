@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import useLeaderStore from "../store/leaderBoardStore";
 import SplashScreen from "./SplashScreen";
+import { server } from "./server.js";
 
 const categoriesInfo = [
   {
@@ -25,14 +26,11 @@ function Categories() {
   const fetchLeader = async (category, id) => {
     if (id === 1) {
       setLoading(true);
-      const res = await axios.get(
-        "http://localhost:5555/leaderboard/getLeaderBoard",
-        {
-          params: {
-            category,
-          },
-        }
-      );
+      const res = await axios.get(`${server}/leaderboard/getLeaderBoard`, {
+        params: {
+          category,
+        },
+      });
 
       if (res.status === 200) {
         setFastfoodLeader(res.data[0]);
