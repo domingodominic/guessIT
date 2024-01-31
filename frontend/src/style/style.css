@@ -179,6 +179,15 @@
   font-size: 20px;
 }
 
+.fs-13 {
+  font-size: 13px;
+  font-style: italic;
+}
+
+.fs-80 {
+  font-size: 80px;
+}
+
 .styled--button {
   margin: 0 auto;
   margin-top: 10px;
@@ -191,6 +200,39 @@
   font-family: rubik;
 }
 
+.pulse {
+  animation-name: pulse;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+
+.correct {
+  animation: correct 0.5s forwards;
+  border: 1px solid green;
+}
+
+@keyframes correct {
+  from {
+    border: 1px solid green;
+  }
+}
+@keyframes pulse {
+  20% {
+    transform: translateX(-10px);
+  }
+  40% {
+    transform: translateX(10px);
+  }
+  60% {
+    transform: translateX(-10px);
+  }
+  80% {
+    transform: translateX(10px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
 .splash--container {
   height: 100svh;
   background-color: azure;
@@ -395,7 +437,7 @@
   height: 100svh;
 }
 
-@media (max-height: 668px) {
+@media (max-height: 700px) {
   .categories--container .category--image {
     width: 300px;
     height: 140px;

@@ -17,7 +17,7 @@ function Start() {
       <div className="textAlign-c">
         <img src={require("../images/start.png")} width={250} />
         <h1 className="black main--color">Let's Go</h1>
-        <p className="soft">{`Ready to beat player ${fastfoodLeader.name} ?`}</p>
+        <p className="soft">{`Ready to beat ${fastfoodLeader.score} score of player ${fastfoodLeader.name} ?`}</p>
         <button
           className="styled--button flex center"
           onClick={() => navigate("/fastfood")}

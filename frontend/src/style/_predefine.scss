@@ -143,6 +143,13 @@
 .fs-15 {
   font-size: 20px;
 }
+.fs-13 {
+  font-size: 13px;
+  font-style: italic;
+}
+.fs-80 {
+  font-size: 80px;
+}
 //styled button
 
 .styled--button {
@@ -155,4 +162,38 @@
   border-radius: 10px;
   letter-spacing: 2px;
   font-family: rubik;
+}
+
+.pulse {
+  animation-name: pulse;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+.correct {
+  animation: correct 0.5s forwards;
+  border: 1px solid green;
+}
+
+@keyframes correct {
+  from {
+    border: 1px solid green;
+  }
+}
+
+@keyframes pulse {
+  20% {
+    transform: translateX(-10px);
+  }
+  40% {
+    transform: translateX(10px);
+  }
+  60% {
+    transform: translateX(-10px);
+  }
+  80% {
+    transform: translateX(10px);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
